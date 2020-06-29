@@ -8,8 +8,11 @@ items together. We are trying to find things that are associated with each other
 ## Installation
 
 ```bash
-pip install apriori
+pip install kiwi-apriori
 ```
+
+It seems someone already has `apriori` on Twine. The package will be used by
+`import apriori`.
 
 ## Quick example 
 

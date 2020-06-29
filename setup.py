@@ -12,12 +12,12 @@ from shutil import rmtree
 from setuptools import find_packages, setup, Command
 
 # Package meta-data.
-NAME = 'apriori'
+NAME = 'kiwi_apriori'
 DESCRIPTION = 'Association Analysis Package'
 URL = 'https://github.com/kiwidamien/apriori'
 AUTHOR = 'Damien Martin'
 REQUIRES_PYTHON = '>=3.6.0'
-VERSION = '0.1.0'
+VERSION = '0.3.0'
 
 # What packages are required for this module to be executed?
 REQUIRED = [
@@ -91,7 +91,7 @@ class UploadCommand(Command):
 
         sys.exit()
 
-print(find_packages(exclude=["tests", "*.tests", "*.tests.*", "tests.*"]))
+
 # Where the magic happens:
 setup(
     name=NAME,
