@@ -75,6 +75,22 @@ for rule in apriori.generate_rules(sample_transactions, min_support=0.5):
     print(msg)
 ```
 
+Output:
+```python
+{white wine} ---> {cheese}		(support=0.7500, confidence=1.0000, lift=1.0000)
+{cheese} ---> {white wine}		(support=0.7500, confidence=0.7500, lift=1.0000)
+{white wine} ---> {bread}		(support=0.5000, confidence=0.6667, lift=1.3333)
+{bread} ---> {white wine}		(support=0.5000, confidence=1.0000, lift=1.3333)
+{cheese} ---> {bread}		(support=0.5000, confidence=0.5000, lift=1.0000)
+{bread} ---> {cheese}		(support=0.5000, confidence=1.0000, lift=1.0000)
+{white wine} ---> {bread,cheese}		(support=0.5000, confidence=0.6667, lift=1.3333)
+{cheese} ---> {bread,white wine}		(support=0.5000, confidence=0.5000, lift=1.0000)
+{bread} ---> {cheese,white wine}		(support=0.5000, confidence=1.0000, lift=1.3333)
+{cheese,white wine} ---> {bread}		(support=0.5000, confidence=0.6667, lift=1.3333)
+{bread,white wine} ---> {cheese}		(support=0.5000, confidence=1.0000, lift=1.0000)
+{bread,cheese} ---> {white wine}		(support=0.5000, confidence=1.0000, lift=1.3333)
+```
+
 ## Alternative approaches
 
 This is one approach to determining "this-goes-with-that". Here are comparisons to other alternatives
