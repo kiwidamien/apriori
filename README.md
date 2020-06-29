@@ -48,7 +48,7 @@ Let's look at the first two rows to illustrate support, confidence, and lift.
 * __Confidence of A --> B__: Fraction of transactions containing A that also contain B. i.e. the probability that a randomly chosen transaction containing A also contains B
   - 2 of the 3 transactions containing `{white wine}` also contain `{bread}`, so confidence of `white wine -> bread` is 0.667 
   - 2 of the 2 transactions containing `{bread}` also contain `{white wine}`, so confidence of `bread -> white wine` is 1.000
-  - Can be calculated as `support(A AND B)/support(A)
+  - Can be calculated as `support(A AND B)/support(A)`
 * __Lift of A --> B__: The support of A AND B divided by the support of A and the support of B
   - Measures the amount of information you get knowing A
   - Knowing the lift of white wine to bread is 1.3333 tells us that someone buying white wine is 1.3333 times more likely than the average person to buy bread as well. 
@@ -87,7 +87,7 @@ detection algorithm to find things that are associated with one another, or look
 lot of different purchases).
 
 **Pros**
-- Algorithm is a lot faster (much smaller size than this algorithm).
+- Algorithm is a lot faster (only deal with $N$ items, and the $O(N^2)$ relationships between items, not all possible subsets of items).
 
 **Cons**
 - Edges are formed between pairs of nodes, so this approach tells you about pairs of items that are associated.
