@@ -154,4 +154,4 @@ in common than a shirt and trousers based on features, but you wouldn't wear two
 ## References
 
 * Wikipedia has great psuedo-code on the [apriori algorithm](https://en.wikipedia.org/wiki/Apriori_algorithm)
-* There is another pip installable package, [apyrori](https://github.com/ymoch/apyori/)
+* There is another pip installable package, [apyrori](https://github.com/ymoch/apyori/) and [effecient apriori](https://github.com/tommyod/Efficient-Apriori)

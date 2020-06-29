@@ -17,7 +17,7 @@ DESCRIPTION = 'Association Analysis Package'
 URL = 'https://github.com/kiwidamien/apriori'
 AUTHOR = 'Damien Martin'
 REQUIRES_PYTHON = '>=3.6.0'
-VERSION = '0.3.0'
+VERSION = '0.3.2'
 
 # What packages are required for this module to be executed?
 REQUIRED = [
